@@ -11,9 +11,16 @@ public class VokalKonsonan {
 
         /*Program*/
         //masukan kalimat
-        System.out.println("Masukan kalimat : ");
+        System.out.print("Masukan kalimat : ");
         Scanner scanner = new Scanner(System.in);
         word = scanner.nextLine();
+
+        // memanggil prosedur yang mengembalikan nilai int
+        vokal = num_vokal(word);
+        konsonan = num_konsonan(word);
+
+        System.out.println("Jumlah huruf vokal : " + vokal);
+        System.out.println("Jumlah huruf konsonan : " + konsonan);
     }
 
     public static int num_vokal(String word) {
